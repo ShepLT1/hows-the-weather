@@ -15,9 +15,9 @@ header {
 
 }
 
-aside {
+h1 {
 
-    margin: 0 5px;
+    margin-bottom: 0;
 
 }
 
@@ -89,9 +89,16 @@ aside {
 
 }
 
-article {
+main {
 
-    margin-right: 20px;
+    padding: 0 2%;
+
+}
+
+.col-md-3 {
+
+    padding-right: 2%;
+    padding-left: 0;
 
 }
 
@@ -149,7 +156,7 @@ article {
 
 h4 {
 
-    margin: 15px 0;
+    margin: 20px 0;
 
 }
 
@@ -193,5 +200,75 @@ h6 {
 .row {
 
     margin: 0;
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .col-md-3 {
+
+        padding-left: 2%;
+
+    }
+
+    .col-md-9 {
+
+        border-radius: 0;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding-top: 30px;
+    
+    }
+    
+    main {
+
+        padding: 0;
+
+    }
+
+    #today-head-container {
+
+        margin: -5px 0;
+
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    .col-md-9 {
+
+        padding-top: 20px;
+
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .col-md-9 {
+
+        padding-left: 15px;
+        padding-right: 15px;
+    
+    }
+
+    .card {
+
+        margin-right: 0;
+    
+    }
+
+    #five-day-forecast {
+
+        margin-left: 10px;
+
+    }
+
+    h1 {
+
+        font-size: 200%;
+
+    }
 
 }
