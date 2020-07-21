@@ -5,6 +5,8 @@ $(document).ready(function() {
 
     var city = "";
 
+    var failed = false;
+
     var queryURL = "";
 
     var uvURL = "";
@@ -65,8 +67,15 @@ $(document).ready(function() {
 
         $.ajax({
             url: queryURL,
-            method: "GET"
+            method: "GET",
+            error: function() {
+                alert("Please enter a valid city name");
+                failed = true;
+                return;
+            }
         }).then(function(response) {
+
+            failed = false;
 
             $("#today-head-container").empty();
 
@@ -141,7 +150,10 @@ $(document).ready(function() {
 
         $.ajax({
             url: queryURL,
-            method: "GET"
+            method: "GET",
+            error: function() {
+                return;
+            }
         }).then(function(response) {
             $("#five-day-forecast").empty();
             $("h4").text("5-day Forecast:");
@@ -222,18 +234,28 @@ $(document).ready(function() {
         // push city name to city name array and store in local storage
         city = $("input").val().trim();
 
-        cityArr.push(city);
-
-        localStorage.setItem("Cities", JSON.stringify(cityArr));
-
-        // append button to aside
-        displayBtns();
-
         // Ajax call for today's weather forecast
         todayWeather();
 
         // Ajax call for 5 day forecast
         fiveDayWeather();
+
+        setTimeout(function() {
+
+            console.log(failed);
+
+            if (failed === false) {
+
+                cityArr.push(city);
+
+                localStorage.setItem("Cities", JSON.stringify(cityArr));
+
+                // append button to aside
+                displayBtns();
+
+            }
+
+        }, 200);
 
         $("input").val("");
 
