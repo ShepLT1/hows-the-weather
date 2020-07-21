@@ -216,7 +216,7 @@ h6 {
         border-radius: 0;
         border-top-left-radius: 8px;
         border-top-right-radius: 8px;
-        padding-top: 30px;
+        padding-top: 15px;
     
     }
     
@@ -228,7 +228,7 @@ h6 {
 
     #today-head-container {
 
-        margin: -5px 0;
+        margin: -5px 25px -5px 0;
 
     }
 
@@ -238,7 +238,19 @@ h6 {
 
     .col-md-9 {
 
-        padding-top: 20px;
+        padding-top: 30px;
+
+    }
+
+    #today-forecast-icon {
+
+        display: block;
+
+    }
+
+    h4 {
+
+        margin-top: 15px;
 
     }
 
@@ -250,6 +262,7 @@ h6 {
 
         padding-left: 15px;
         padding-right: 15px;
+        padding-top: 20px;
     
     }
 
