@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How's the Weather?</title>
+    <link rel="stylesheet" type="text/css" href="./Develop/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./Develop/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://use.fontawesome.com/0b6bab144c.js"></script>
+</head>
+<body>
+    <header>
+        <h1>How's the Weather?</h1>
+    </header>
+
+    <!-- Main content container -->
+    <main class="row">
+
+        <!-- Search and buttons container Hint: col width 3-->
+        <aside class="col-md-3">
+            <h5>Search for a City:</h5>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" aria-label="Search">
+                <button class="btn btn-primary my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+            </form>
+            <div id="button-container"></div>
+            <div id="button-clear-container">
+                <button type="button" id="button-clear" class="btn btn-outline-danger">Clear all cities</button>
+            </div>
+        </aside>
+
+        <!-- Today & 5 day forecast container Hint: col width 9-->
+        <article class="col-md-9">
+
+            <!-- Today's forecast container -->
+            <section class="row" id="today-weather">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div id="today-head-container" class="col-md-12"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 today-content">
+                            <p id="today-temp"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 today-content">
+                            <p id="today-humidity"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 today-content">
+                            <p id="wind"></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 today-content">
+                            <p id="uv"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 5 Day forecast container -->
+            <section class="row">
+
+                <h4 class="col-md-12"></h4>
+
+                <div class="row" id="five-day-forecast"></div>
+                
+            </section>
+
+        </article>
+
+    </main>
+    
+</body>
+<script src="./Develop/script.js"></script>
+</html>

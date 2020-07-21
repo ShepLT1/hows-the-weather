@@ -1,0 +1,197 @@
+body {
+
+    background-color: rgb(42, 42, 42);
+    color: rgb(241, 241, 241);
+
+}
+
+header {
+
+    background-color: rgb(29, 29, 29);
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #017989;
+
+}
+
+aside {
+
+    margin: 0 5px;
+
+}
+
+.form-control {
+
+    margin-right: 5px !important;
+    width: 70% !important;
+    background-color: rgb(63, 63, 63);
+    border: 1px solid #0169DA;
+
+}
+
+.form-control:focus {
+
+    background-color: rgb(63, 63, 63);
+    color: rgb(241, 241, 241);
+    border: 1px solid rgb(241, 241, 241);
+    box-shadow: none;
+
+}
+
+#button-container {
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.city-buttons {
+
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2px;
+    background-color: rgb(63, 63, 63);
+    color: rgb(241, 241, 241);
+
+}
+
+.city-buttons:focus {
+
+    box-shadow: none;
+
+}
+
+.city-buttons:hover {
+
+    box-shadow: 0 0 2px 2px rgb(241, 241, 241); 
+
+}
+
+.city-buttons:active {
+
+    box-shadow: 0 0 2px 2px #0169DA; 
+
+}
+
+.fa-times {
+
+    float: right;
+    position: relative;
+    top: 3px;
+
+}
+
+#button-clear-container {
+
+    margin-bottom: 20px;
+
+}
+
+article {
+
+    margin-right: 20px;
+
+}
+
+.col-md-9 {
+
+    max-width: 900px;
+    border-radius: 5px;
+    padding: 0;
+    padding-top: 20px;
+    padding-left: 25px;
+
+}
+
+.col-md-12 {
+
+    padding: 0;
+
+}
+
+#today-head-container {
+
+    padding: 0;
+    margin: -10px 0;
+
+}
+
+.today-content {
+
+    padding: 0;
+
+}
+
+#today-weather-city-date {
+
+    display: inline;
+
+}
+
+#today-forecast-icon {
+
+    display: inline;
+    position: relative;
+    top: -5px;
+    min-width: 65px;
+
+}
+
+.uv-color {
+
+    display: inline;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+h4 {
+
+    margin: 15px 0;
+
+}
+
+.card {
+
+    padding: 15px;
+    width: 150px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+
+}
+
+.card-title {
+
+    margin: 0;
+
+}
+
+h6 {
+
+    font-size: 125%;
+    margin: 0px;
+    text-align: center;
+
+}
+
+.card-img {
+
+    max-width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.card-text {
+
+    text-align: center;
+
+}
+
+.row {
+
+    margin: 0;
+
+}
