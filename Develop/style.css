@@ -15,12 +15,14 @@ header {
 
 }
 
+/* Header text styling */
 h1 {
 
     margin-bottom: 0;
 
 }
 
+/* Search form styling */
 .form-control {
 
     margin-right: 5px !important;
@@ -39,6 +41,7 @@ h1 {
 
 }
 
+/* City button container styling */
 #button-container {
 
     margin-top: 10px;
@@ -46,6 +49,7 @@ h1 {
 
 }
 
+/* City buttons styling */
 .city-buttons {
 
     display: block;
@@ -75,6 +79,7 @@ h1 {
 
 }
 
+/* City button remove 'x' styling */
 .fa-times {
 
     float: right;
@@ -83,6 +88,7 @@ h1 {
 
 }
 
+/* 'Clear all city buttons' button container */
 #button-clear-container {
 
     margin-bottom: 20px;
@@ -95,6 +101,7 @@ main {
 
 }
 
+/* Aside column styling */
 .col-md-3 {
 
     padding-right: 2%;
@@ -102,6 +109,7 @@ main {
 
 }
 
+/* Article column styling */
 .col-md-9 {
 
     max-width: 900px;
@@ -112,12 +120,14 @@ main {
 
 }
 
+/* Styling for any full length columns */
 .col-md-12 {
 
     padding: 0;
 
 }
 
+/* Styling for today city, date, icon container */
 #today-head-container {
 
     padding: 0;
@@ -125,18 +135,21 @@ main {
 
 }
 
+/* Styling for today weather data content */
 .today-content {
 
     padding: 0;
 
 }
 
+/* Styling for today weather city and date */
 #today-weather-city-date {
 
     display: inline;
 
 }
 
+/* Styling for today weather icon */
 #today-forecast-icon {
 
     display: inline;
@@ -146,6 +159,7 @@ main {
 
 }
 
+/* Styling for UV index color */
 .uv-color {
 
     display: inline;
@@ -154,12 +168,14 @@ main {
 
 }
 
+/* Styling for 5 day forecast title */
 h4 {
 
     margin: 20px 0;
 
 }
 
+/* Style for each 5 day forecast card */
 .card {
 
     padding: 15px;
@@ -169,12 +185,14 @@ h4 {
 
 }
 
+/* Style for each 5 day forecast card title */
 .card-title {
 
     margin: 0;
 
 }
 
+/* Style for date of 5 day forecast card */
 h6 {
 
     font-size: 125%;
@@ -183,6 +201,7 @@ h6 {
 
 }
 
+/* Style for weather icon of 5 day forecast card */
 .card-img {
 
     max-width: 50px;
@@ -191,18 +210,21 @@ h6 {
 
 }
 
+/* Style for weather data of 5 day forecast card */
 .card-text {
 
     text-align: center;
 
 }
 
+/* Style for any Bootstrap row */
 .row {
 
     margin: 0;
 
 }
 
+/* Mobile responsive styling @ 576px */
 @media screen and (max-width: 576px) {
 
     .col-md-3 {
@@ -234,6 +256,7 @@ h6 {
 
 }
 
+/* Mobile responsive styling @ 425px */
 @media screen and (max-width: 425px) {
 
     .col-md-9 {
@@ -256,6 +279,7 @@ h6 {
 
 }
 
+/* Mobile responsive styling @ 320px */
 @media screen and (max-width: 320px) {
 
     .col-md-9 {

@@ -18,45 +18,59 @@
     <!-- Main content container -->
     <main class="row">
 
-        <!-- Search and buttons container Hint: col width 3-->
+        <!-- Search and buttons container -->
         <aside class="col-md-3">
             <h5>Search for a City:</h5>
+
+            <!-- Search City form -->
             <form class="form-inline">
                 <input class="form-control mr-sm-2" type="search" aria-label="Search">
                 <button class="btn btn-primary my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
             </form>
             <div id="button-container"></div>
             <div id="button-clear-container">
+
+                <!-- Clear all cities button -->
                 <button type="button" id="button-clear" class="btn btn-outline-danger">Clear all cities</button>
             </div>
         </aside>
 
-        <!-- Today & 5 day forecast container Hint: col width 9-->
+        <!-- Today & 5 day forecast container -->
         <article class="col-md-9">
 
             <!-- Today's forecast container -->
             <section class="row" id="today-weather">
                 <div class="col-md-12">
+
+                    <!-- Container for city name, today's date, and weather icon -->
                     <div class="row">
                         <div id="today-head-container" class="col-md-12"></div>
                     </div>
                     <div class="row">
                         <div class="col-md-12 today-content">
+
+                            <!-- Today's temp -->
                             <p id="today-temp"></p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12 today-content">
+
+                            <!-- Today's humidity -->
                             <p id="today-humidity"></p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12 today-content">
+
+                            <!-- Today's wind speed -->
                             <p id="wind"></p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-12 today-content">
+
+                            <!-- Today's UV index -->
                             <p id="uv"></p>
                         </div>
                     </div>
@@ -66,8 +80,10 @@
             <!-- 5 Day forecast container -->
             <section class="row">
 
+                <!-- 5 day forecast city name -->
                 <h4 class="col-md-12"></h4>
 
+                <!-- Container for 5 day forecast cards -->
                 <div class="row" id="five-day-forecast"></div>
                 
             </section>
