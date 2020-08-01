@@ -95,14 +95,14 @@ $(document).ready(function() {
 
             $("#today-head-container").empty();
 
-            uvURL = "http://api.openweathermap.org/data/2.5/uvi?appid=" + APIkey + "&lat=" + response.coord.lat + "&lon=" + response.coord.lon;
+            uvURL = "https://api.openweathermap.org/data/2.5/uvi?appid=" + APIkey + "&lat=" + response.coord.lat + "&lon=" + response.coord.lon;
 
             // converts from Kelvin to Fahrenheit
             var tempF = (((response.main.temp-273.15)*1.8)+32).toFixed(2);
             // grabs weather icon ID
             var forecast = response.weather[0].icon;
             // grabs weather icon image file pertaining to grabbed ID
-            var forecastIcon = "http://openweathermap.org/img/wn/" + forecast + ".png";
+            var forecastIcon = "https://openweathermap.org/img/wn/" + forecast + ".png";
             // creates tag to house selected city and today's date
             var todayCityDate = $("<h3>");
             // creates image tag to hold weather icon
@@ -211,7 +211,7 @@ $(document).ready(function() {
                     // gets 5 day forecast weather icon ID
                     var forecast = response.list[j].weather[0].icon;
                     // uses weather icon ID to retrieve weather icon image file
-                    var forecastIcon = "http://openweathermap.org/img/wn/" + forecast + ".png";
+                    var forecastIcon = "https://openweathermap.org/img/wn/" + forecast + ".png";
                     fiveDay = timeDate.slice(8, 10);
                     fiveMonth = timeDate.slice(5, 7);
                     fiveYear = timeDate.slice(0, 4);
